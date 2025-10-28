@@ -1,21 +1,21 @@
 body {
-    background-color: #F8F5F0; 
-    color: #2B2B2B; 
+    background-color: #F8F5F0;
+    color: #2B2B2B;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 16px;
-    margin-left: 40px;  
-    margin-right: 40px; 
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 header {
-    background-color: #C44536; 
-    color: #F8F5F0; 
-    padding: 10px 0;    
+    background-color: #C44536;
+    color: #F8F5F0;
+    padding: 10px 0;
     font-weight: bold;
-    border-bottom: 3px solid #DDC3A5; 
+    border-bottom: 3px solid #DDC3A5;
 }
 
 hr {
@@ -28,7 +28,7 @@ hr {
 h2 {
     font-size: 1.6em;
     color: #2B2B2B;
-    margin: 15px ;
+    margin: 15px;
 }
 
 img {
@@ -46,13 +46,14 @@ a {
     text-decoration: none;
     display: inline-block;
 }
-a:hover{
+
+a:hover {
     color: darkblue;
     text-decoration: underline
 }
 
 footer {
-    background-color: #EAD0C1; 
+    background-color: #EAD0C1;
     color: #2B2B2B;
     padding: 15px 0;
     border-top: 2px solid #DDC3A5;
