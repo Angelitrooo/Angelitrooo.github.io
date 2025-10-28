@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./horario.css">
     <title>Horario 1ºDAW</title>
 </head>
+
 <body>
+    <header>
+        <h1>Horario 1ºDAW</h1>
+    </header>
+    <table>
+        <thead>
+            <tr class="fila">
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="fila">
+                <td  class="hora">16:00-17:00</td> 
+                <td  rowspan="3" class="prog">Programación</td>
+                <td  rowspan="3" class="entdesa">EntDesarrollo</td><!--martes-->
+                <td  rowspan="4" class="bd">BaseDatos</td><!--miercoles-->
+                <td  rowspan="2" class="bd">BaseDatos</td><!--jueves-->
+                <td  rowspan="3" class="prog">Programación</td><!--viernes-->
+            </tr>
+            <tr class="fila">
+                <td  class="hora">17:00-18:00</td>
+            </tr>
+            <tr class="fila">
+                <td  class="hora">18:00-19:00</td>
+                <td  class="Digi">Digitalización</td><!--jueves-->
 
+            </tr>
+            <tr class="fila">
+                <td  class="hora">19:00-20:00</td>
+                <td  rowspan="2" class="SistInfor">SistemasInfor</td>
+                <td  rowspan="2" class="LengMarcas">LengMarcas</td><!--martes-->
+                <td  class="Sost">Sostenibilidad</td><!--jueves-->
+                <td  rowspan="3" class="SistInfor">SistemasInfor</td><!--viernes-->
+            </tr>
+            <tr class="fila">
+                <td  class="hora">20:00-21:00</td>
+                <td  rowspan="2" class="Ipe">IPE</td><!--miercoles-->
+                <td  rowspan="2" class="prog">Programación</td><!--jueves-->
+
+            </tr>
+            <tr class="fila">
+                <td  class="hora">21:00-22:00</td>
+                <td  class="LengMarcas">LengMarcas</td>
+                <td  class="Ipe">IPE</td><!--martes-->
+
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="../index.html">Volver al menú principal</a></h2>
 </body>
+
 </html>
 
-</body>
-</html>

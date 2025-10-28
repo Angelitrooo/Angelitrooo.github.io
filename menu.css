@@ -1,5 +1,5 @@
 body {
-    background-color: #0B1220;
+    background-color: #0c192e;
     color: #E6EEF8;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #0F1724;
+    background-color: #0B1220;
     color: #E6EEF8;
     padding: 10px 0;
     font-weight: bold;
@@ -32,3 +32,19 @@ a {
 a:hover {
     color: #3BD671;
 }
+hr {
+    color: #3BD671;
+}
+footer {  
+    background-color: #0B1220;
+    color: #E6EEF8;
+    padding: 15px 0;
+    border-top: 2px solid #3BD671;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0d1a2d; 
+
+}   

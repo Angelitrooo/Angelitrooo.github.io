@@ -1,0 +1,111 @@
+
+body {
+    background-color: #0B1B33;
+    color: #F0F0F0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px 0s;
+    text-align: center;
+}
+header {
+    background-color: #0B1220;
+    color: #E6EEF8;
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 3px solid #3BD671;
+}
+
+
+table {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+thead th {
+    background-color: #1E3A5F; 
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #556C88;
+}
+
+
+tbody tr {
+    border: 1px solid #556C88;
+}
+
+
+td.hora {
+    background-color: #2A4D6C; 
+    color: #F0F0F0;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #556C88;
+}
+
+
+td.prog {
+    background-color: #4C6B8F; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.entdesa {
+    background-color: #6B7C99; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.bd {
+    column-span: all;
+    background-color: #3E5068; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.Digi {
+    background-color: #5C3A72; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.SistInfor {
+    background-color: #2F4F4F; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.LengMarcas {
+    background-color: #704214; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.Sost {
+    background-color: #556B2F; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+td.Ipe {
+    background-color: #8B0000; 
+    color: #F0F0F0;
+    border: 1px solid #556C88;
+}
+
+
+h2 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: #3BD671; 
+}
+
+table {
+    border-collapse: separate; 
+    border-spacing: 5px; 
+}
+
