@@ -4,7 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+
     font-size: 16px;
     margin-left: 40px;
     margin-right: 40px;
@@ -16,6 +16,7 @@ header {
     padding: 10px 0;
     font-weight: bold;
     border-bottom: 3px solid #DDC3A5;
+    text-align: center;
 }
 
 footer {
@@ -24,6 +25,7 @@ footer {
     padding: 15px 0;
     border-top: 2px solid #DDC3A5;
     margin-top: 5s0px;
+    text-align: center;
 }
 
 img {
@@ -41,4 +43,32 @@ a {
 a:hover {
     color: darkblue;
     text-decoration: underline;
+}
+
+img {
+    margin-left: 465px;
+    text-align: center;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.lista2 {
+    text-align: left;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.lista1{
+    text-align: left;
+    margin-left: 625px;
 }

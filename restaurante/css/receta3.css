@@ -26,13 +26,6 @@ footer {
     margin-top: 5s0px;
 }
 
-img {
-    width: 500px;
-    height: 350px;
-    border-radius: 10px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
 a {
     text-decoration: none;
     color: rgb(173, 70, 75);
@@ -41,4 +34,28 @@ a {
 a:hover {
     color: darkblue;
     text-decoration: underline;
+}
+img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.lista2  {
+    text-align: left;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.lista1 {
+    text-align: left;
+    margin-left: 525px;
 }

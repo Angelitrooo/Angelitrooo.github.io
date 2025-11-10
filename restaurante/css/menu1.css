@@ -53,9 +53,21 @@ a:hover {
 }
 
 footer {
+
+    display: flex;                
+    justify-content: center;     
+    align-items: center;         
+    padding: 10px;
+    gap: 8px;
+    text-align: center;
     background-color: #EAD0C1;
     color: #2B2B2B;
     padding: 15px 0;
     border-top: 2px solid #DDC3A5;
-    margin-top: 5s0px;
+    margin-top: 50px;
+
+}
+.a{
+    width: 30px;     
+    height: auto; 
 }

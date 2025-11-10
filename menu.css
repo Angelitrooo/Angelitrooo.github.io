@@ -1,5 +1,5 @@
-body {
-    background-color: #0c192e;
+body{ 
+    background-color: #0c192e !important;
     color: #E6EEF8;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -14,37 +14,83 @@ header {
     padding: 10px 0;
     font-weight: bold;
     border-bottom: 3px solid #3BD671;
+    text-align: center;
 }
 
 h2 {
-    font-size: 1.6em;
-    color: #3BD671;
-    margin: 15px;
+    font-size: 1.6em !important;
+    color: #000000 !important;
+    margin: 15px !important;
+    text-align: center !important;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
-    color: #7CC7FF;
+    text-decoration: none !important;
+    display: inline-block !important;
+    color: #7CC7FF !important;
     transition: color 0.2s ease, transform 0.1s ease;
 }
 
 a:hover {
     color: #3BD671;
 }
+
 hr {
     color: #3BD671;
 }
-footer {  
+
+footer {
     background-color: #0B1220;
     color: #E6EEF8;
     padding: 15px 0;
-    border-top: 2px solid #3BD671;
-    margin-top: 50px;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: #0d1a2d; 
+    background-color: #0d1a2d;
+}
 
-}   
+.catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.divfoto {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 10% / 50%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s ease-in-out;
+}
+.divfoto1 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 10% / 50%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s ease-in-out;
+}
+.divfoto:hover {
+    transform: scale(1.05);
+}
+.divfoto1:hover {
+    transform: scale(1.05);
+}
+
+.eti-restaurante {
+    background-image: url("./img/rest.jpg");
+}
+
+.eti-horario {
+    background-image: url("./img/hor.jpg");
+}
+
+.eti-retos {
+    background-image: url("./img/retos.jpg");
+}
+
