@@ -1,6 +1,5 @@
-/* Variables para facilitar la gestión de colores y fuentes */
-:root {
-    --color-sedan: #e98d30; /* Naranja */
+.root {
+    --color-sedan: #e98d30; 
     --color-suv: #00696a;   /* Verde Oscuro/Teal */
     --color-luxury: #003636; /* Verde Muy Oscuro */
     --color-text-light: #ffffff;
@@ -8,9 +7,8 @@
     --font-primary: 'Arial', sans-serif; /* Usaremos Arial como sustituto simple */
 }
 
-/* Estilos Generales para el Cuerpo (simulando el fondo gris claro del diseño) */
 body {
-    background-color: #f0f0f0; /* Fondo del área principal */
+    background-color: #f0f0f0;
     font-family: var(--font-primary);
     margin: 0;
     padding: 50px 20px;
@@ -21,18 +19,16 @@ body {
     box-sizing: border-box;
 }
 
-/* Contenedor Principal de las Tarjetas */
 .card-container {
-    display: flex; /* Habilita Flexbox */
-    gap: 0; /* Asegura que no haya espacio entre las tarjetas */
-    width: 90%; /* Ancho general del grupo de tarjetas */
-    max-width: 900px; /* Ancho máximo para el desktop */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
-    border-radius: 8px; /* Borde redondeado al contenedor si aplica, aunque las tarjetas lo tienen */
-    overflow: hidden; /* Importante para que los bordes redondeados del contenedor corten el contenido */
-}
+    display: flex;
+    gap: 0; 
+    width: 90%; 
+    max-width: 900px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden;
 
-/* Estilos de la Tarjeta Base */
+}
 .card {
     flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio */
     padding: 40px;
