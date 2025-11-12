@@ -1,10 +1,10 @@
 .root {
     --color-sedan: #e98d30; 
-    --color-suv: #00696a;   /* Verde Oscuro/Teal */
-    --color-luxury: #003636; /* Verde Muy Oscuro */
+    --color-suv: #00696a;   
+    --color-luxury: #003636; 
     --color-text-light: #ffffff;
     --color-btn-light: #ffffff;
-    --font-primary: 'Arial', sans-serif; /* Usaremos Arial como sustituto simple */
+    --font-primary: 'Arial', sans-serif; 
 }
 
 body {
@@ -30,20 +30,19 @@ body {
 
 }
 .card {
-    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio */
+    flex: 1; 
     padding: 40px;
     color: var(--color-text-light);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye el contenido (texto y botón) */
-    min-height: 380px; /* Altura mínima para que se vean uniformes */
-    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+    justify-content: space-between; 
+    min-height: 380px; 
+    box-sizing: border-box; 
 }
 
-/* Estilos Específicos de Color para cada Tarjeta */
+
 .sedan-card {
     background-color: var(--color-sedan);
-    /* El diseño tiene un borde ligeramente redondeado a la izquierda */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -54,51 +53,46 @@ body {
 
 .luxury-card {
     background-color: var(--color-luxury);
-    /* El diseño tiene un borde ligeramente redondeado a la derecha */
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
 /* Iconos */
 .icon-placeholder i {
-    font-size: 2.5rem; /* Tamaño del icono */
-    margin-bottom: 25px; /* Espacio debajo del icono */
+    font-size: 2.5rem; 
+    margin-bottom: 25px; 
 }
 
 /* Títulos */
 .card h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-top: 15px; /* Espacio superior */
-    margin-bottom: 25px; /* Espacio inferior */
+    margin-top: 15px; 
+    margin-bottom: 25px; 
 }
 
-/* Párrafo de Descripción */
 .card p {
     font-size: 0.95rem;
     line-height: 1.6;
-    margin-bottom: 50px; /* Espacio antes del botón */
-    opacity: 0.8; /* Ligeramente más claro que el texto principal */
+    margin-bottom: 50px; 
+    opacity: 0.8;
 }
 
-/* Botón "Learn More" */
+
 .btn {
     display: inline-block;
     padding: 10px 30px;
     background-color: var(--color-btn-light);
-    color: inherit; /* Hereda el color del texto del contenedor para el borde */
+    color: inherit; 
     text-decoration: none;
-    border-radius: 50px; /* Botón con forma de píldora */
+    border-radius: 50px; 
     font-weight: bold;
     font-size: 0.9rem;
-    border: 2px solid var(--color-btn-light); /* Borde blanco, se usa para el hover */
-    transition: all 0.3s ease; /* Transición para el efecto hover */
-    text-align: center;
-    width: fit-content; /* Se ajusta al contenido */
-    /* El color del texto del botón lo ponemos individualmente para cada tarjeta */
+    border: 2px solid var(--color-btn-light); 
+    transition: all 0.3s ease; 
+    width: fit-content; 
 }
 
-/* Estilos específicos del texto del botón */
 .sedan-card .btn {
     color: var(--color-sedan);
 }
@@ -111,28 +105,26 @@ body {
     color: var(--color-luxury);
 }
 
-/* Efecto Hover del Botón (invierten los colores) */
+
 .btn:hover {
-    background-color: transparent; /* Fondo transparente */
-    color: var(--color-btn-light); /* Texto blanco */
+    background-color: transparent; 
+    color: var(--color-btn-light); 
 }
 
-/* --- Adaptación para Móviles (Responsive Design) --- */
+
 @media (max-width: 768px) {
     .card-container {
-        flex-direction: column; /* Apila las tarjetas verticalmente en pantallas pequeñas */
+        flex-direction: column;
         width: 100%;
         max-width: 400px;
-        box-shadow: none; /* Quitamos la sombra del contenedor para que se vean los bordes */
+        box-shadow: none; 
     }
 
     .card {
         padding: 30px;
-        min-height: auto; /* Altura automática en móvil */
-        border-radius: 0 !important; /* Quitamos todos los radios por defecto */
-        margin-bottom: 10px; /* Espacio entre las tarjetas apiladas */
-        
-        /* Aplicamos los radios solo a la primera y última en el stack */
+        min-height: auto; 
+        border-radius: 0 !important;
+        margin-bottom: 10px; 
         border-radius: 8px;
     }
     
@@ -142,12 +134,12 @@ body {
 
     .luxury-card {
         border-radius: 0 0 8px 8px !important;
-        margin-bottom: 0; /* Quitar el margen de la última tarjeta */
+        margin-bottom: 0;
     }
     
-    /* En móvil, si se quita el box-shadow del contenedor, se ve mejor con un poco de separación y bordes */
+    
     .card:not(:last-child) {
-         margin-bottom: 0; /* Quitar el margen para que se peguen */
+         margin-bottom: 0; 
     }
 
     .sedan-card {

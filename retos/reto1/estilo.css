@@ -6,8 +6,12 @@ body {
   color: #3b2f2f;
   display: flex;
   justify-content: center;
+  font-family: fuente_gotica;
 }
-
+@font-face {
+  font-family: fuente_gotica;
+  src: url(./recursos/fonts/young-serif/YoungSerif-Regular.ttf) type('truetype');
+}
 .container {
   background-color: #fff;
   max-width: 600px;
