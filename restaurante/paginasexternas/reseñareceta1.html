@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseña Tortilla de Patatas</title>
+    <link rel="stylesheet" href="../css/reseña1.css">
+</head>
+<body>
+
+    <h2>Reseña sobre la Tortilla de Patatas</h2>
+
+    <form>
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" class="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+        <label for="punto">Punto de cocción:</label>
+        <select class="punto" name="punto">
+            <option value="poco hecha">Poco hecha</option>
+            <option value="jugosa">Jugosa</option>
+            <option value="cuajada">Cuajada</option>
+            <option value="muy cuajada">Muy cuajada</option>
+        </select>
+
+        <label for="cebolla">¿Con o sin cebolla?</label>
+        <select class="cebolla" name="cebolla">
+            <option value="con">Con cebolla</option>
+            <option value="sin">Sin cebolla</option>
+        </select>
+
+        <label for="valoracion">Valoración (1 a 5):</label>
+        <input type="number" class="valoracion" name="valoracion" min="1" max="5">
+
+        <label for="comentario">Comentario:</label>
+        <textarea class="comentario" name="comentario" rows="4" placeholder="Escribe tu opinión aquí..."></textarea>
+
+        <button type="submit">Enviar reseña</button>
+    </form>
+
+</body>
+</html>

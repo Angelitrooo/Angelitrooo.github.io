@@ -72,3 +72,12 @@ h2 {
     text-align: left;
     margin-left: 625px;
 }
+
+.reseña2{
+    text-align: left !important;
+    text-decoration: none;
+    color: rgb(173, 70, 75);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 650px;
+}

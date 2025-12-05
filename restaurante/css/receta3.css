@@ -59,3 +59,12 @@ h2 {
     text-align: left;
     margin-left: 525px;
 }
+
+.reseña3{
+    text-align: center !important;
+    text-decoration: none;
+    color: rgb(173, 70, 75);
+    font-weight: bold;
+    font-size: 20px;
+    
+}

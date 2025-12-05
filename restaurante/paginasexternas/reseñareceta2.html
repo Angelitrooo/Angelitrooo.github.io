@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseña de Flamenquín</title>
+    <link rel="stylesheet" href="../css/reseña2.css">
+</head>
+
+<body>
+
+    <h2>Reseña sobre el Flamenquín</h2>
+    <div>
+        <form>
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" class="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+            <label for="rebozado">Punto del rebozado:</label>
+            <select class="rebozado" name="rebozado">
+                <option value="crujiente">Crujiente</option>
+                <option value="suave">Suave</option>
+                <option value="muy dorado">Muy dorado</option>
+            </select>
+
+            <label for="valoracion">Valoración (1 a 5):</label>
+            <input type="number" classs="valoracion" name="valoracion" min="1" max="5">
+
+            <label for="comentario">Comentario:</label>
+            <textarea class="comentario" name="comentario" rows="4" placeholder="Escribe tu opinión aquí..."></textarea>
+
+            <button type="submit">Enviar reseña</button>
+        </form>
+    </div>
+</body>
+
+</html>

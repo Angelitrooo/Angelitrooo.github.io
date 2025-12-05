@@ -81,7 +81,7 @@ footer {
 .divfoto1:hover {
     transform: scale(1.05);
 }
-
+/* Imágenes de fondo menú */
 .eti-restaurante {
     background-image: url("./img/rest.jpg");
 }
