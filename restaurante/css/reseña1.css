@@ -1,35 +1,69 @@
 body {
-    font-family: Arial;
-    background: #fff7d6;
-    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e6; /* fondo crema */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-form {
-    background: white;
-    padding: 20px;
-    max-width: 430px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0002;
-}
-
-.opciones label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input, textarea, button {
+/* TÍTULO */
+h2 {
     width: 100%;
-    margin-bottom: 15px;
+    background-color: #c44536; /* rojo */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 30px 0;
+}
+
+/* FORMULARIO */
+form {
+    background-color: #ffffff; /* blanco limpio */
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABELS */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input, textarea {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-button {
-    background: #ffcc33;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
+/* RADIOS */
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
 }
-button:hover { background: #ffb800; }
+
+/* BOTÓN */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #c44536; /* rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #a93226; /* rojo más oscuro */
+}

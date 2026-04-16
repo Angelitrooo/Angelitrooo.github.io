@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <meta name="description" content="En esta página hay contenido de lenguaje de marcas de 1ºDAW">
     <meta name="keywords" content="html, restaurante, horario, DAW, retos">
     <meta name="author" content="Ángel López Nieto">
-    <meta charset="UTF-8">
     <title>Reseña Tortilla</title>
     <link rel="stylesheet" href="../css/reseña1.css">
 </head>
@@ -12,14 +12,14 @@
 
 <h2>Reseña sobre la Tortilla de Patatas</h2>
 
-<form>
+<form action="#" method="post">
 
-    <label>Tu nombre:</label>
-    <input type="text" placeholder="Escribe tu nombre">
+    <label for="nombre">Tu nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
     <label>Punto de cocción:</label>
     <div class="opciones">
-        <label><input type="radio" name="punto" value="Poco hecha"> Poco hecha</label>
+        <label><input type="radio" name="punto" value="Poco hecha" required> Poco hecha</label>
         <label><input type="radio" name="punto" value="Jugosa"> Jugosa</label>
         <label><input type="radio" name="punto" value="Cuajada"> Cuajada</label>
         <label><input type="radio" name="punto" value="Muy cuajada"> Muy cuajada</label>
@@ -27,19 +27,19 @@
 
     <label>¿Con o sin cebolla?</label>
     <div class="opciones">
-        <label><input type="radio" name="cebolla" value="con"> Con cebolla</label>
+        <label><input type="radio" name="cebolla" value="con" required> Con cebolla</label>
         <label><input type="radio" name="cebolla" value="sin"> Sin cebolla</label>
     </div>
 
-    <label>Valoración (1 a 5):</label>
-    <input type="number" min="1" max="5">
+    <label for="valoracion">Valoración (1 a 5):</label>
+    <input type="number" id="valoracion" name="valoracion" min="1" max="5" required>
 
-    <label>Comentario:</label>
-    <textarea rows="4" placeholder="Escribe tu opinión..."></textarea>
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu opinión..." required></textarea>
 
     <button type="submit">Enviar reseña</button>
+
 </form>
 
 </body>
 </html>
-

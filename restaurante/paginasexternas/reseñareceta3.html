@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En esta página hay contenido de lenguaje de marcas de 1ºDAW">
     <meta name="keywords" content="html, restaurante, horario, DAW, retos">
-    <meta charset="UTF-8">
     <title>Reseña Salmorejo</title>
     <link rel="stylesheet" href="../css/reseña3.css">
 </head>
@@ -12,41 +12,41 @@
 
 <h2>Reseña sobre el Salmorejo</h2>
 
-<form>
+<form action="#" method="post">
 
-    <label>Tu nombre:</label>
-    <input type="text" placeholder="Tu nombre">
+    <label for="nombre">Tu nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
     <label>Textura:</label>
     <div class="opciones">
-        <label><input type="radio" name="textura" value="Fina"> Fina</label>
+        <label><input type="radio" name="textura" value="Fina" required> Fina</label>
         <label><input type="radio" name="textura" value="Espesa"> Espesa</label>
         <label><input type="radio" name="textura" value="Muy espesa"> Muy espesa</label>
     </div>
 
     <label>Acidez:</label>
     <div class="opciones">
-        <label><input type="radio" name="acidez" value="Suave"> Suave</label>
+        <label><input type="radio" name="acidez" value="Suave" required> Suave</label>
         <label><input type="radio" name="acidez" value="Equilibrada"> Equilibrada</label>
         <label><input type="radio" name="acidez" value="Alta"> Alta</label>
     </div>
 
     <label>Toppings:</label>
     <div class="opciones">
-        <label><input type="checkbox" name="toppings" value="Jamón"> Jamón</label>
-        <label><input type="checkbox" name="toppings" value="Huevo"> Huevo</label>
-        <label><input type="checkbox" name="toppings" value="Picatostes"> Picatostes</label>
+        <label><input type="checkbox" name="toppings[]" value="Jamón"> Jamón</label>
+        <label><input type="checkbox" name="toppings[]" value="Huevo"> Huevo</label>
+        <label><input type="checkbox" name="toppings[]" value="Picatostes"> Picatostes</label>
     </div>
 
-    <label>Valoración (1 a 5):</label>
-    <input type="number" min="1" max="5">
+    <label for="valoracion">Valoración (1 a 5):</label>
+    <input type="number" id="valoracion" name="valoracion" min="1" max="5" required>
 
-    <label>Comentario:</label>
-    <textarea rows="4" placeholder="Escribe tu opinión..."></textarea>
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu opinión..." required></textarea>
 
     <button type="submit">Enviar reseña</button>
+
 </form>
 
 </body>
 </html>
-

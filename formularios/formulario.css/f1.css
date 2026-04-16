@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* CONTENEDOR */
+form {
+    width: 800px;
+    margin: 20px auto;
+}
+
+/* FIELDSETS */
+fieldset {
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* COLORES POR BLOQUE */
+.datos {
+    background-color: #bfbfbf;
+}
+
+.acceso {
+    background-color: #e2b089;
+}
+
+.documentos {
+    background-color: #b07a7a;
+}
+
+/* FILAS */
+.fila {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* INPUTS */
+input, select {
+    padding: 5px;
+}
+
+/* SUBOPCIONES */
+.subopciones {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* BOTONES */
+.botones {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: 1px solid #999;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="En esta página hay contenido de lenguaje de marcas de 1ºDAW">
+    <meta name="keywords" content="html, restaurante, horario, DAW, retos">
+    <meta name="author" content="Ángel López Nieto">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href=".././formulario.css/f1.css">
+</head>
+<body>
+
+<form>
+
+    <!-- DATOS PERSONALES -->
+    <fieldset class="datos">
+        <legend>Datos Personales</legend>
+
+        <div class="fila">
+            <label>Nombre:</label>
+            <input type="text">
+
+            <label>Apellidos:</label>
+            <input type="text">
+
+            <label>DNI:</label>
+            <input type="text">
+        </div>
+
+        <div class="fila">
+            <label>Localidad de Nacimiento:</label>
+            <input type="text">
+
+            <label>Provincia:</label>
+            <select>
+                <option>Huelva</option>
+                <option>Sevilla</option>
+                <option>Córdoba</option>
+            </select>
+
+            <label>Fecha de Nacimiento:</label>
+            <input type="date">
+        </div>
+
+        <div class="fila">
+            <label>Dirección:</label>
+            <input type="text">
+
+            <label>Código Postal:</label>
+            <input type="text">
+        </div>
+    </fieldset>
+
+    <!-- FORMA DE ACCESO -->
+    <fieldset class="acceso">
+        <legend>Forma de Acceso</legend>
+
+        <label><input type="radio" name="acceso"> Directo</label>
+
+        <div class="subopciones">
+            <label><input type="radio" name="acceso"> Bachillerato Log Modalidad</label>
+            <input type="text">
+
+            <label><input type="radio" name="acceso"> Experimental</label>
+
+            <label><input type="radio" name="acceso"> COU Opción</label>
+            <input type="text">
+
+            <label><input type="radio" name="acceso"> FP2</label>
+
+            <label><input type="radio" name="acceso"> Otros (especifique)</label>
+            <input type="text">
+        </div>
+
+        <label><input type="radio" name="acceso"> Prueba Libre</label>
+    </fieldset>
+
+    <!-- DOCUMENTOS -->
+    <fieldset class="documentos">
+        <legend>Documentos Adjuntados</legend>
+
+        <label><input type="checkbox"> Fotocopia DNI</label>
+        <label><input type="checkbox"> Certificado Académico</label>
+        <label><input type="checkbox"> Otros documentos (especifique)</label>
+        <input type="text">
+    </fieldset>
+
+    <!-- BOTONES -->
+    <div class="botones">
+        <button type="submit">Enviar Solicitud</button>
+        <button type="reset">Limpiar datos</button>
+    </div>
+
+</form>
+
+</body>
+</html>

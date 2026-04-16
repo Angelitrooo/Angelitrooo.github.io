@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Título de la Página WEB</title>
+</head>
+<body>
+
+<h1 id="encabezado">Encabezado de la página web</h1>
+
+<p id="parrafo">Esto es un párrafo</p>
+
+<div>
+  <table border="1">
+    <tr id="fila">
+      <td id="celda1">Celda 1</td>
+      <td id="celda2">Celda 2</td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<button onclick="ejercicio1()">EJ 1 </button>
+<button onclick="ejercicio2()">EJ 2 </button>
+<button onclick="ejercicio3()">EJ 3 </button>
+<button onclick="ejercicio4()">EJ 4 </button>
+<button onclick="ejercicio5()">EJ 5 </button>
+
+<script>
+
+function ej1() {
+  document.getElementById("encabezado").textContent = "DOM Manipulado";
+  document.getElementById("encabezado").style.color = "red";
+  document.getElementById("encabezado").classList.add("titulo-activo");
+}
+
+function ej2() {
+  document.getElementById("parrafo").textContent = "Esto es un párrafo con texto añadido";
+}
+
+function ej3() {
+  document.getElementById("c1").textContent = "Nueva Celda 1";
+  document.getElementById("c2").textContent = "Nueva Celda 2";
+}
+
+function ej4() {
+  var nuevaCelda = document.createElement("td");
+  nuevaCelda.textContent = "Celda 3";
+  document.getElementById("fila").appendChild(nuevaCelda);
+}
+
+function ej5() {
+  document.getElementById("celda1").style.backgroundColor = "yellow";
+  document.getElementById("celda2").style.backgroundColor = "yellow";
+}
+
+document.addEventListener("click", function(e) {
+  console.log("Has hecho click en: " + e.target.tagName);
+});
+
+</script>
+
+</body>
+</html>

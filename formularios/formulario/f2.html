@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="En esta página hay contenido de lenguaje de marcas de 1ºDAW">
+    <meta name="keywords" content="html, restaurante, horario, DAW, retos">
+    <meta name="author" content="Ángel López Nieto">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos de la informática - Formulario de registro</title>
+    <link rel="stylesheet" href=".././formulario.css/f2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</h1>
+
+        <!-- SECCIÓN DATOS PERSONALES -->
+        <div class="section datos-personales">
+            <div class="section-title">Datos personales</div>
+
+            <div class="form-group">
+                <label class="form-label">Nombre:</label>
+                <input type="text" class="form-input" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Domicilio:</label>
+                <input type="text" class="form-input" placeholder="calle, número y localidad">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">País de origen:</label>
+                <select class="form-select">
+                    <option>España</option>
+                    <option>Otro país</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Fecha de nacimiento:</label>
+                <input type="text" class="form-input date-input" placeholder="dd/mm/aaaa">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-input" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Teléfono:</label>
+                <input type="tel" class="form-input" placeholder="">
+            </div>
+
+            <div class="form-group-inline">
+                <label class="form-label-inline">Estado civil:</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="soltero" name="estado_civil" value="Soltero">
+                        <label for="soltero" class="radio-label">Soltero</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="casado" name="estado_civil" value="Casado">
+                        <label for="casado" class="radio-label">Casado</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="separado" name="estado_civil" value="Separado">
+                        <label for="separado" class="radio-label">Separado</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="viudo" name="estado_civil" value="Viudo">
+                        <label for="viudo" class="radio-label">Viudo</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group-inline">
+                <label class="form-label-inline">Sexo:</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="hombre" name="sexo" value="Hombre">
+                        <label for="hombre" class="radio-label">Hombre</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="mujer" name="sexo" value="Mujer">
+                        <label for="mujer" class="radio-label">Mujer</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN OTRA INFORMACIÓN -->
+        <div class="section otra-informacion">
+            <div class="section-title">Otra información de interés</div>
+
+            <div class="select-group">
+                <label class="select-label">Seleccione los componentes electrónicos con los que habitualmente trabaja:</label>
+                <select class="form-select">
+                    <option>Móvil</option>
+                    <option>Tablet</option>
+                    <option>Ordenador</option>
+                    <option>Ebook</option>
+                </select>
+            </div>
+
+            <div class="checkbox-section">
+                <div class="checkbox-section-title">Seleccione sus actividades favoritas:</div>
+                <div class="checkbox-grid">
+                    <div class="checkbox-item-full">
+                        <input type="checkbox" id="deporte" name="actividades" value="Hacer deporte">
+                        <label for="deporte" class="checkbox-label">Hacer deporte</label>
+                    </div>
+                    <div class="checkbox-item-full">
+                        <input type="checkbox" id="salir" name="actividades" value="Salir con mis amigos">
+                        <label for="salir" class="checkbox-label">Salir con mis amigos</label>
+                    </div>
+                    <div class="checkbox-item-full">
+                        <input type="checkbox" id="rutas" name="actividades" value="Realizar rutas de senderismo">
+                        <label for="rutas" class="checkbox-label">Realizar rutas de senderismo</label>
+                    </div>
+                    <div class="checkbox-item-full">
+                        <input type="checkbox" id="series" name="actividades" value="Ver series, pelis, ...">
+                        <label for="series" class="checkbox-label">Ver series, pelis, ...</label>
+                    </div>
+                    <div class="checkbox-item-full">
+                        <input type="checkbox" id="cine" name="actividades" value="Ir al cine">
+                        <label for="cine" class="checkbox-label">Ir al cine</label>
+                    </div>
+                    <div class="checkbox-item-full">
+                        <input type="checkbox" id="musica" name="actividades" value="Escuchar música">
+                        <label for="musica" class="checkbox-label">Escuchar música</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textarea-group">
+                <label class="textarea-label">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label>
+                <textarea class="form-textarea"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Elige o escribe tu peli favorita:</label>
+                <input type="text" class="form-input" placeholder="">
+            </div>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="button-group">
+            <button class="btn btn-submit">Enviar</button>
+            <button class="btn btn-cancel">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
