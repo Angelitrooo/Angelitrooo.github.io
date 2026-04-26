@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 7</title>
+    <link rel="stylesheet" href="act7.css">
+</head>
+<body>
+
+    <h2>Actividad 7</h2>
+
+    <div class="contenedor">
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label>Provincia:</label>
+        <select id="provincia">
+            <option value="">--Selecciona--</option>
+            <option value="Almería">Almería</option>
+            <option value="Cádiz">Cádiz</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Granada">Granada</option>
+            <option value="Huelva">Huelva</option>
+            <option value="Jaén">Jaén</option>
+            <option value="Málaga">Málaga</option>
+            <option value="Sevilla">Sevilla</option>
+        </select>
+
+        <label>Pueblo:</label>
+        <input type="text" id="pueblo">
+
+        <button onclick="mostrarDatos()">Mostrar</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="act7.js"></script>
+</body>
+</html>

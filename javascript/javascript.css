@@ -51,9 +51,10 @@ footer {
 }
 
 .catalogo {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     margin-top: 80px;
 }
 
