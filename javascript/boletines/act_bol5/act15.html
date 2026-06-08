@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Usuarios</title>
+    <link rel="stylesheet" href="act15.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Usuarios</h1>
+        
+        <form id="agenda-form" onsubmit="agregarUsuario(event)">
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <button type="submit">Añadir Usuario</button>
+        </form>
+
+        <div class="lista-seccion">
+            <h2>Usuarios Registrados</h2>
+            <button onclick="visualizarUsuarios()" class="btn-listar">Actualizar Lista</button>
+            <ul id="lista-usuarios"></ul>
+        </div>
+    </div>
+    <script src="act15.js"></script>
+</body>
+</html>

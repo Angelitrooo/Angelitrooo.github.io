@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121214;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #ffffff;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #1a1a1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-top: 0;
+    color: #f59e0b;
+}
+
+.hint-box {
+    background-color: #27272a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    min-height: 24px;
+    border: 1px solid #3f3f46;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 4px;
+    margin-bottom: 20px;
+    background-color: #27272a;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.cell {
+    background-color: #3f3f46;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.cell:hover {
+    background-color: #52525b;
+    transform: scale(1.05);
+}
+
+.cell.miss {
+    background-color: #ef4444;
+    cursor: not-allowed;
+}
+
+.cell.found {
+    background-color: #eab308;
+    cursor: not-allowed;
+    animation: pulse 1s infinite alternate;
+}
+
+#reset-btn {
+    background-color: #f59e0b;
+    color: #121214;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#reset-btn:hover {
+    background-color: #d97706;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
